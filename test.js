@@ -1,0 +1,1 @@
+window.location = 'SpecRunner.html';
