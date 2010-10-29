@@ -11,7 +11,7 @@ describe('SomeList Spec', function() {
 
 	// just a test
 	it('Should return true', function() {
-		expect(true).toBeTruthy();
+		expect(false).toBeTruthy();
 	});
 
 	it('Should accept accept array to constructor', function() {
