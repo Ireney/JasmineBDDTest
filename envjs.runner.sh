@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # establish working directory
-cd /Users/evilbyte/Projects/JasmineTest/
+#cd /Users/evilbyte/Projects/JasmineTest/
 
 # cleanup previous test runs
 rm -f test-results/*.xml
