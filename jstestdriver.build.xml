@@ -1,5 +1,10 @@
-<target name="test">        
-    <exec executable="/bin/sh" osfamily="unix">
-        <arg value="jstestdriver.runner.sh" />
-    </exec>
-</target>  
+<project name="JasmineTest" default="dist" basedir=".">
+    <description>
+       Building with JsTestDriver.
+    </description>
+  <target name="test">        
+      <exec executable="/bin/sh" osfamily="unix">
+          <arg value="jstestdriver.runner.sh" />
+      </exec>
+  </target>
+</project>  
