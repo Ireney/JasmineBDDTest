@@ -1,0 +1,5 @@
+<target name="test">        
+    <exec executable="/bin/sh" osfamily="unix">
+        <arg value="jstestdriver.runner.sh" />
+    </exec>
+</target>  

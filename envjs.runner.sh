@@ -10,4 +10,3 @@ rm -f test-results/*.xml
 #java -cp js.jar:jline.jar org.mozilla.javascript.tools.shell.Main -opt -1 envjs.bootstrap.js $@
 
 java -cp lib/js.jar:lib/jline.jar org.mozilla.javascript.tools.shell.Main -opt -1 -f lib/envjs.bootstrap.js -f test.js
-
