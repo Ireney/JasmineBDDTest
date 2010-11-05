@@ -1,8 +1,13 @@
-<project name="JasmineTest" default="dist" basedir=".">
+<project name="JasmineTest" default="test" basedir=".">
     <description>
        Building with JsTestDriver.
     </description>
   <target name="test">        
+      <exec executable="/bin/sh" osfamily="unix">
+          <arg value="jstestdriver.runner.sh" />
+      </exec>
+  </target>
+  <target name="headless.test">        
       <exec executable="/bin/sh" osfamily="unix">
           <arg value="jstestdriver.runner.sh" />
       </exec>
