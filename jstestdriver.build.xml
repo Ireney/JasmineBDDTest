@@ -9,7 +9,7 @@
   </target>
   <target name="headless.test">        
       <exec executable="/bin/sh" osfamily="unix">
-          <arg value="jstestdriver.runner.sh" />
+          <arg value="jstestdriver.headless.runner.sh" />
       </exec>
   </target>
 </project>  
