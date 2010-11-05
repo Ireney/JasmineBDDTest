@@ -2,6 +2,13 @@
 # directory to write output XML (if this doesn't exist, the results will not be generated!)
 OUTPUT_DIR="test-results"
 
+XVFB=`which java`
+if [ "$?" -eq 1 ];
+then
+    echo "java not found."
+    exit 1
+fi
+
 XVFB=`which Xvfb`
 if [ "$?" -eq 1 ];
 then
