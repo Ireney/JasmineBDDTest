@@ -2,10 +2,10 @@
 # directory to write output XML (if this doesn't exist, the results will not be generated!)
 OUTPUT_DIR="test-results"
 
-XVFB=`which java`
+JAVA=`which java`
 if [ "$?" -eq 1 ];
 then
-    echo "java not found."
+    echo "Java not found."
     exit 1
 fi
 
@@ -38,9 +38,9 @@ export DISPLAY=:99 # set display to use that of the xvfb
 #java -jar lib/jstestdriver-1.2.2.jar --config jsTestDriver.conf --port 4222 --browser $FIREFOX --tests all --testOutput $OUTPUT_DIR
 
 #start the server
-java -jar lib/jstestdriver-1.2.2.jar --port 4222 --browser $FIREFOX
-$CHROME http://localhost:4222/capture
-java -jar lib/jstestdriver-1.2.2.jar --tests all --testOutput test-results
+$JAVA -jar lib/jstestdriver-1.2.2.jar --port 4222 --browser $FIREFOX
+$CHROME --no-first-run --homepage localhost:4222/capture
+$JAVA -jar lib/jstestdriver-1.2.2.jar --tests all --testOutput test-results
 
 kill $PID_XVFB     # shut down xvfb (firefox will shut down cleanly by JsTestDriver)
 echo "Done."
