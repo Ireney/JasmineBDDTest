@@ -1,4 +1,4 @@
-describe('SomeListSpec', function () {
+describe('SomeList Spec', function () {
 	// setup
 	beforeEach(function() {
 		list = new SomeList([ 'item 1', 'item 2' ]);
@@ -11,7 +11,7 @@ describe('SomeListSpec', function () {
 
 	// just a test
 	it('Should return true', function() {
-		expect(false).toBeTruthy();
+		expect(true).toBeTruthy();
 	});
 
 	it('Should accept accept array to constructor', function() {
